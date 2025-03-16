@@ -1,0 +1,16 @@
+version: 2
+updates:
+# Enable when GitHub Actions are configured
+# For GitHub Actions, use the value /. Dependabot will search the /.github/workflows directory,
+# as well as the action.yml/action.yaml file from the root directory.
+#  - package-ecosystem: github-actions
+#    directory: /
+#    schedule:
+#      interval: weekly
+  - package-ecosystem: maven
+    commit-message:
+      prefix: "chore:"
+    directory: /
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 15

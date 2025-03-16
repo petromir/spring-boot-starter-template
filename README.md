@@ -7,6 +7,8 @@ Click on the green `Use This Template` button and start building your awesome Sp
 ## 🤩 Highlights
 _Add what this starter is about along with other important details_
 - The project uses Java 21 and Spring Boot 3.4.X
+- `SNAPSHOT` versions are not allowed during release builds (i.e., the ones with non-SNAPSHOT version, e.g. `1.0.0`)
+- [Dependabot](https://github.com/dependabot) is configured to update Maven dependencies
 
 ## 📋 Prerequisites
 1. [Install SDKMAN](https://sdkman.io/install)
@@ -20,8 +22,6 @@ sdk env install
 #### Properties
 _Use a prefix to distinguish your properties from the default ones or the ones provided by other libraries._
 
-You can configure the starter by providing the following properties inside `application.yaml` file:
-
 | Name                        | Description                                           | Default Value | Constraints    |
 |-----------------------------|-------------------------------------------------------|---------------|----------------|
 | libraries.template.property | This property is supposed to control starter behavior | 1             | Positive value |
@@ -29,6 +29,13 @@ You can configure the starter by providing the following properties inside `appl
 Each property could be provided as an environment variable relying on the [Spring environment variable management](https://docs.spring.io/spring-boot/how-to/properties-and-configuration.html).</br> 
 For example, providing 
 `LIBRARIES_TEMPLATE_PROPERTY` has the same effect as specifying `libraries.template.property` in the `application.yaml` file
+
+You can configure the starter by providing the above properties inside `application.yaml` file:
+```yaml
+libraries:
+  template:
+    property: 42
+```
 
 ### Code
 _Explain how to use the exposed beans_
@@ -103,17 +110,15 @@ mvnd versions:revert -Dincludes=com.petromirdzhunev:template-spring-boot-starter
 
 ## 🗓️ Changelog
 [CHANGELOG.md](CHANGELOG.md) follows a [Keep A Changelog format](https://keepachangelog.com/en/1.1.0/). Anything that leads to 
-breaking changes should be prefixed with `[BREAKING]`
+breaking changes should be prefixed with `[BREAKING CHANGE]`
 
 ## 🙌 Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## ✔️ TODO:
-- [ ] Extend CHANGELOG.md to show all cases of the format
 - [ ] Define CONTRIBUTING.md
 - [ ] Provide a real example of a bean exposed by the autoconfiguration along with tests. 
 - [ ] Add publishing to Maven central repository
   - [ ] Documentation
   - [ ] Add GitHub action
-- [ ] Add [Dependabot](https://github.com/dependabot) or [Renovate](https://github.com/renovatebot/renovate)
 - [ ] Add spring-configuration-metadata.json describing the properties
