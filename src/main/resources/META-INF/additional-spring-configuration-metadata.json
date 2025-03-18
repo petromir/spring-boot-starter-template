@@ -1,0 +1,21 @@
+{
+  "properties": [
+    {
+      "name": "libraries.template.property",
+      "type": "java.lang.Integer",
+      "description": "An example of a property.",
+      "defaultValue": "1"
+    }
+  ],
+  "hints": [
+    {
+      "name": "libraries.template.property",
+      "values": [
+        {
+          "value": "1",
+          "description": "Default property value."
+        }
+      ]
+    }
+  ]
+}

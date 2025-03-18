@@ -9,6 +9,7 @@ _Add what this starter is about along with other important details_
 - The project uses Java 21 and Spring Boot 3.4.X
 - `SNAPSHOT` versions are not allowed during release builds (i.e., the ones with non-SNAPSHOT version, e.g. `1.0.0`)
 - [Dependabot](https://github.com/dependabot) is configured to update Maven dependencies
+- Configuration metadata is provided
 
 ## 📋 Prerequisites
 1. [Install SDKMAN](https://sdkman.io/install)
@@ -121,4 +122,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 - [ ] Add publishing to Maven central repository
   - [ ] Documentation
   - [ ] Add GitHub action
-- [ ] Add spring-configuration-metadata.json describing the properties
