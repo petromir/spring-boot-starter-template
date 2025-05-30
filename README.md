@@ -6,7 +6,7 @@ Click on the green `Use This Template` button and start building your awesome Sp
 
 ## 🤩 Highlights
 _Add what this starter is about along with other important details_
-- The project uses Java 21 and Spring Boot 3.4.X
+- The project uses Java 21 and Spring Boot 3.5.X
 - `SNAPSHOT` versions are not allowed during release builds (i.e., the ones with non-SNAPSHOT version, e.g. `1.0.0`)
 - [Dependabot](https://github.com/dependabot) is configured to update Maven dependencies
 - Configuration metadata is provided
