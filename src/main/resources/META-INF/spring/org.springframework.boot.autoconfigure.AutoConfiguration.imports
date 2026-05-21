@@ -1,1 +1,1 @@
-com.petromirdzhunev.spring.boot.template.SpringBootTemplateAutoConfiguration
+com.petromirdzhunev.spring.boot.template.config.SpringBootStarterTemplateAutoConfiguration
