@@ -4,21 +4,21 @@ A simplified way to bootstrap and configure your Spring Boot starter project.
 
 Click on the green `Use This Template` button and start building your awesome Spring Boot starter.
 
-## 🤩 Highlights
+## Highlights
 _Add what this starter is about along with other important details_
 - The project uses Java 21 and Spring Boot 3.5.X
 - `SNAPSHOT` versions are not allowed during release builds (i.e., the ones with non-SNAPSHOT version, e.g. `1.0.0`)
 - [Dependabot](https://github.com/dependabot) is configured to update Maven dependencies
 - Configuration metadata is provided
 
-## 📋 Prerequisites
+## Prerequisites
 1. [Install SDKMAN](https://sdkman.io/install)
 2. Initialize SDKMAN environment
 ```shell
 sdk env install
 ```
 
-## 💡Usage
+## Usage
 ### Configuration
 #### Properties
 _Use a prefix to distinguish your properties from the default ones or the ones provided by other libraries._
@@ -109,11 +109,11 @@ After the development is finished, you can revert to non-`SNAPSHOT` version by:
 mvnd versions:revert -Dincludes=com.petromirdzhunev:template-spring-boot-starter
 ```
 
-## 🗓️ Changelog
+## Changelog
 [CHANGELOG.md](CHANGELOG.md) follows a [Keep A Changelog format](https://keepachangelog.com/en/1.1.0/). Anything that leads to 
 breaking changes should be prefixed with `[BREAKING CHANGE]`
 
-## 🙌 Contributing
+## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## ✔️ TODO:
