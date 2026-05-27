@@ -1,7 +1,7 @@
 {
   "properties": [
     {
-      "name": "libraries.template.property",
+      "name": "libraries.template.count",
       "type": "java.lang.Integer",
       "description": "An example of a property.",
       "defaultValue": "1"
@@ -9,11 +9,15 @@
   ],
   "hints": [
     {
-      "name": "libraries.template.property",
+      "name": "libraries.template.count",
       "values": [
         {
           "value": "1",
           "description": "Default property value."
+        },
+        {
+          "value": "2",
+          "description": "Another possible value."
         }
       ]
     }
